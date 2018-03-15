@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">toWatch</string>
+    <string name="movie_poster">Movie\'s Poster</string>
+    <string name="movie_backdrop">Movie\'s Backdrop</string>
+    <string name="movie_vote_average">Movie\'s Vote Average</string>
+    <string name="movie_release_date">Movie\'s Release Date</string>
+    <string name="movie_db_logo">MovieDB\'s logo</string>
+    <string name="error_message">Error occurred</string>
+    <string name="error_network_message">Network error occurred</string>
+</resources>

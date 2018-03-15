@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ferumate.towatch.movieDetails.view.MovieDetailsActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Titanic"
+        />
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="@dimen/big_poster_size"
+        android:layout_height="@dimen/big_poster_size"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:contentDescription="@string/movie_poster"
+        android:scaleType="fitCenter"
+        tools:src="@mipmap/ic_launcher"
+        />
+
+    <ImageView
+        android:id="@+id/ivVoteAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toTopOf="@id/ivPoster"
+        app:layout_constraintStart_toEndOf="@id/ivPoster"
+        android:contentDescription="@string/movie_vote_average"
+        android:src="@drawable/star"
+        />
+
+    <TextView
+        android:id="@+id/tvVoteAverage"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/ivVoteAverage"
+        app:layout_constraintBottom_toBottomOf="@id/ivVoteAverage"
+        app:layout_constraintStart_toEndOf="@id/ivVoteAverage"
+        tools:text="8.5"
+        />
+
+    <ImageView
+        android:id="@+id/ivReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        app:layout_constraintTop_toBottomOf="@id/tvVoteAverage"
+        app:layout_constraintStart_toEndOf="@id/ivPoster"
+        android:contentDescription="@string/movie_release_date"
+        android:src="@drawable/calendar"
+        />
+
+    <TextView
+        android:id="@+id/tvReleaseDate"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/ivReleaseDate"
+        app:layout_constraintBottom_toBottomOf="@id/ivReleaseDate"
+        app:layout_constraintStart_toEndOf="@id/ivReleaseDate"
+        tools:text="20.06.2018"
+        />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ivPoster"
+        tools:text="Lorem ipsum dolor sit amet enim."
+        />
+
+    <ImageView
+        android:id="@+id/ivBackdrop"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="@dimen/default_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOverview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/movie_backdrop"
+        android:scaleType="fitStart"
+        tools:src="@mipmap/ic_launcher"
+        />
+
+</android.support.constraint.ConstraintLayout>
